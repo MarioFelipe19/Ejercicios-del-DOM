@@ -1,0 +1,41 @@
+El DOM (Document Object Model) o Modelo de Objetos del Documento es una representación estructurada y jerárquica de un documento HTML o XML. Proporciona una interfaz de programación que permite acceder y manipular dinámicamente el contenido, la estructura y el estilo de una página web.
+Aquí tienes una explicación más detallada:
+
+Estructura jerárquica:
+
+El DOM organiza todos los elementos de un documento web en una estructura de árbol.
+En la raíz de este árbol está el objeto "document", que representa toda la página.
+Los elementos HTML (como <body>, <div>, <p>, etc.) se convierten en nodos en este árbol.
+
+
+Representación de objetos:
+
+Cada elemento, atributo y fragmento de texto en el documento se convierte en un objeto.
+Estos objetos tienen propiedades y métodos que permiten su manipulación.
+
+
+Interfaz de programación:
+
+El DOM proporciona una API que permite a los lenguajes de programación (principalmente JavaScript) interactuar con la página.
+Esto permite crear, modificar o eliminar elementos y contenido dinámicamente.
+
+
+Relación con la página web:
+
+El DOM es una representación en memoria de la estructura HTML de la página.
+Cualquier cambio en el DOM se refleja inmediatamente en la visualización de la página.
+
+
+Eventos:
+
+El DOM también maneja eventos, permitiendo responder a acciones del usuario como clics o entradas de teclado.
+
+
+Navegación:
+
+Permite navegar por la estructura del documento, accediendo a elementos padres, hijos o hermanos.
+
+
+Independencia del lenguaje:
+
+Aunque se usa comúnmente con JavaScript, el DOM es independiente del lenguaje y puede ser utilizado con otros lenguajes de programación.

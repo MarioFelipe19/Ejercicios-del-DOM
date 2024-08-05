@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de uso de querySelectorAll()</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .destacado {
+            color: #0066cc;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejemplo de uso de querySelectorAll()</h1>
+        <p>Este es el primer párrafo de nuestra página.</p>
+        <p>Aquí tenemos un segundo párrafo con información adicional.</p>
+        <div>
+            <p>Este párrafo está dentro de un div.</p>
+        </div>
+        <p>Y este es nuestro cuarto y último párrafo.</p>
+        <button onclick="destacarParrafos()">Destacar Párrafos</button>
+    </div>
+
+    <script>
+        function destacarParrafos() {
+            
+            var parrafos = document.querySelectorAll('p');
+            
+            
+            parrafos.forEach(function(parrafo) {
+                parrafo.classList.add('destacado');
+            });
+
+            
+            var boton = document.querySelector('button');
+            boton.textContent = 'Párrafos Destacados';
+            boton.disabled = true;
+        }
+    </script>
+</body>
+</html>

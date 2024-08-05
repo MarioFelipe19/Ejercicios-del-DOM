@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de getElementsByClassName()</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .destacado {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejemplo de uso de getElementsByClassName()</h1>
+        <p class="destacado">Este es un párrafo destacado.</p>
+        <p>Este es un párrafo normal.</p>
+        <p class="destacado">Este es otro párrafo destacado.</p>
+        <div class="destacado">Este es un div destacado.</div>
+        <p class="destacado">Un tercer párrafo destacado.</p>
+        <button onclick="cambiarFondo()">Cambiar fondo de elementos destacados</button>
+    </div>
+
+    <script>
+        function cambiarFondo() {
+            
+            var elementos = document.getElementsByClassName("destacado");
+            
+            
+            for (var i = 0; i < elementos.length; i++) {
+                elementos[i].style.backgroundColor = "#FFD700";
+            }
+        }
+    </script>
+</body>
+</html>
